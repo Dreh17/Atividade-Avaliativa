@@ -1,0 +1,5 @@
+void main() {
+  int n1 = 3, n2 = 8;
+  String nome = "Andressa";
+  print("Os números são: $n1 e $n2 e o nome é $nome.");
+}
