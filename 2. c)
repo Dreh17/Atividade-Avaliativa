@@ -1,0 +1,10 @@
+void main() {
+  print("Os primieros números positivos até 50 são:");
+  Imprimir(50);
+}
+
+void Imprimir(int n){
+  for(int x = 1; x<=n; x++){
+    print("$x ");
+  }
+}
