@@ -1,0 +1,26 @@
+class Jogos{
+  
+  String nome;
+  int numero_jogadores;
+  Jogos(String n, int j){
+    this.nome =n;
+    this.numero_jogadores=j;
+  }
+  
+  void ImprimirDados(){
+    print("O nome é $nome e o número de jogadores é $numero_jogadores");
+  }
+  
+  void FaseConcluida(){
+    print("Parabéns, você conseguiu!");
+  }
+}
+
+void main() {
+  var game1 = new Jogos("Candy Crush", 1);
+  game1.ImprimirDados();
+  game1.FaseConcluida();
+  var game2 = new Jogos("Perguntados", 2);
+  game2.ImprimirDados();
+  game2.FaseConcluida();
+}
