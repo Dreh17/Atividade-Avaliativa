@@ -1,0 +1,11 @@
+void main() {
+  Imprimir(7);
+}
+
+void Imprimir(int n){
+  int soma = 0;
+  for(int x = 1; x<=n; x++){
+  soma = soma + x;
+  }
+  print("O resultado da soma é: $soma");
+}
