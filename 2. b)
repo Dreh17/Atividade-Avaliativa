@@ -1,0 +1,10 @@
+void main() {
+  print("Os 10 primieros números positivos são:");
+  Imprimir();
+}
+
+void Imprimir(){
+  for(int x = 1; x<11; x++){
+    print("$x ");
+  }
+}
