@@ -1,0 +1,38 @@
+  
+  void CriarConta(String n, int num, double s, String t){
+    this.Nome = n;
+    this.numero = num;
+    this.saldo_atual = s;
+    this.tipo =t;
+  }
+  
+  void RealizarDeposito (double d){
+    this.saldo_atual = saldo_atual+d;
+    print("Saldo atual é $saldo_atual.");
+  }
+  
+  void RealizarSaque(double v){
+    this.saldo_atual = saldo_atual - v;
+    print("O saldo atual é $saldo_atual.");
+  }
+  
+  double VerificarSaldo () => saldo_atual;
+  
+  void RealizarTransferencia(int nc, int valor){
+    this.saldo_atual = saldo_atual - valor;
+    print("O saldo atual é $saldo_atual.");
+  }
+}
+
+void main (){
+  int op =2; 
+  //digite um novo valor para op para mudar a opção de operação
+    Conta usuario = new Conta();
+    usuario.CriarConta("Andressa",001,5000,"pessoa física");
+    usuario.RealizarDeposito(10.0); 
+    usuario.RealizarSaque(10); 
+    double a = usuario.VerificarSaldo();
+    print("O saldo é $a");
+    usuario.RealizarTransferencia(004,1000);
+  
+}
